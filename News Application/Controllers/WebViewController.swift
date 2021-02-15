@@ -1,0 +1,32 @@
+//
+//  WebViewViewController.swift
+//  News Application
+//
+//  Created by Admin on 13.02.2021.
+//
+
+import UIKit
+
+class WebViewController: UIViewController {
+    @IBOutlet weak var webView: UIWebView!
+    
+    var url:String?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        webView.loadRequest(URLRequest(url: URL(string: url!)!))
+    }
+    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}
